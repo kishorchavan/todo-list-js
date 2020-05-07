@@ -1,0 +1,138 @@
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, rgb(22, 27, 75), rgb(26, 67, 94));
+    color: #fff;
+    min-height: 100vh;
+}
+
+.header {
+    font-size: 35px;
+}
+
+.header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    font-size: 32px;
+}
+
+form button {
+    color: rgb(71, 71, 233);
+    background-color: #fff;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(71, 71, 233);
+    color: #fff;
+}
+
+.todo-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list-ul {
+    min-width: 30%;
+    list-style-type: none;
+}
+
+.todo {
+    margin: 10px;
+    background: #fff;
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.complete-btn,
+.trash-btn {
+    padding: 10px;
+    background-color: rgb(199, 67, 67);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+.trash-btn {
+    background-color: rgb(20, 138, 20);
+}
+
+.todo-item {
+    padding: 0px 8px;
+}
+
+.fa {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fall {
+    transform: translateY(100px) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+}
+
+select {
+    color: rgb(71, 71, 233);
+    width: 200px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: rgb(71, 71, 233);
+    top: 15px;
+    right: 15px;
+    padding: 11px;
+    pointer-events: none;
+}
